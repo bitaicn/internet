@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   
+@font-face { font-family: SimSun; src: url("fonts/SIMSUN.ttf"); }
+@font-face { font-family: "A-OTF Shin Go Pro"; src: url("fonts/A-OTF Shin Go Pro B.otf"); } 
+
+body {
+    background-color: #ffffff; 
+    color:#000000;
+    font-family: "SimSun", "NSimSun", "Garamond", "Times", "serif";
+    font-size: 18px;
+}
+
+h1 {
+    font-family: "SimSun", "NSimSun", "Garamond", "Times", "serif";
+    font-weight: bolder;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "SimSun Regular", "SimSun", "NSimSun", "SimSun", "Garamond", "Times", "serif";
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: "A-OTF Shin Go Pro", "Verdana", "sans-serif";
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+ul, ol {
+    padding-left: 24px;
+    
+}
+
+ul {
+    list-style-type:circle;
+}
+
+video {
+    overflow: hidden;
+    aspect-ratio: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.logo {
+    padding-left: 64px;
+    padding-right: 64px;
+    height: 64px;
+}
+
+.header {
+    background-color: #ffffffee;
+    color:#1e2184;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    z-index: -1;
+    background-color: #1e2184;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.containerbackground {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    aspect-ratio: inherit;
+}
+
+.containerforeground {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    aspect-ratio: inherit;
+    color: #ffffff;
+    text-align: start;
+    padding: 64px;
+}
+
+.logorow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    padding: 8px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+    color:#1e2184;
+}
+
+.card {
+    margin: auto;
+    padding: 32px;
+    border: solid 1px #ffffff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #1e2184;
+    max-width: 600px;
+    margin: 8px;
+    transition: scale 200ms ease-in-out, border 400ms ease-in-out, box-shadow 800ms ease-in-out;
+}
+
+.card2 {
+    margin: 8px;
+    padding: 16px;
+    background-color: #ffffff;
+    color: #1e2184;
+}
+
+.ccp {
+    background-color:#D50000;
+    color: #FFF59D; 
+}
+
+.card:hover {
+    scale: 0.96;
+    box-shadow: 0 0 16px #1e2184;
+    
+}
+
+.ccp:hover {
+    box-shadow: 0 0 16px #D50000;
+    border: solid 1px #D50000;
+}
+
+@media screen and (max-width: 960px) {
+    .row {
+        flex-wrap: wrap;
+    }
+ }
